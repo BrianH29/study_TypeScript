@@ -36,4 +36,41 @@
     //보편적으로 undefined를 많이 쓴다. 데이터 타입이 결정 됬거나 혹은 안됬거나
     //값이 있다 없다 경우에는 null 을 사용한다. 
     
+    //unknown -💩
+    let notSure: unknown = 0; 
+    notSure = 'hello';
+    notSure = true; 
+
+    //any - 💩
+    let anything: any = 0;
+    anything = 'hello'; 
+
+    //void - that nothing returns
+    function print(): void{
+        console.log('hello');
+        return; 
+    }
+
+    let unusable: void = undefined; // 💩
+
+    //never
+    //절대 다른 타입을 return 할 수 없다. error 혹은 while로 코드가 끝나지 않게 작성해야 한다. 
+    function throwError(message: string):never {
+        // message -> server(log)
+
+        throw new Error(message); 
+        while(true){
+
+        }
+
+        //return 1; 다른 타입을 리턴 할 수 없다. 
+        let neverEnding: never; // 💩
+    }
+
+    //object
+    let obj: object; // 💩 
+    function acceptSomeObject(obj: object){}
+    acceptSomeObject({name: 'brian'});
+    acceptSomeObject({animal:'dog'})
+
 }
