@@ -48,7 +48,7 @@
 
     //Rest parameter
     function addNumbers(...numbers:number[]):number{
-        return numbers.reduce((a,b) => a+b)
+        return numbers.reduce((a,b) => a + b);
     }
 
     console.log(addNumbers(1,2));
