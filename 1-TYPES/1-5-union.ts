@@ -1,6 +1,7 @@
 {
     /**
      * Union types: OR
+     * 발생 할 수 있는 여러 케이스 중에 단 하나만 선택 할 경우에
      */
 
     type Direction = 'left'|'right'|'up'|'down'
