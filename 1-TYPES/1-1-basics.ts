@@ -60,7 +60,6 @@
 
         throw new Error(message); 
         while(true){
-
         }
 
         //return 1; 다른 타입을 리턴 할 수 없다. 
