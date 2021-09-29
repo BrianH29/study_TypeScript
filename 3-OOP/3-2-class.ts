@@ -44,4 +44,12 @@
   console.log(maker); 
   const maker2 = CoffeeMaker.makeMachine(14);
   console.log(maker2); 
+
+  /**
+   * static 사용 예제
+   * ex)Math.pi, Math.abs
+   * 
+   * Math 안에는 pi 함수를 사용할 때 const math = new Math(); 라는 것을 생성하지 않았다
+   * 그 이유는 PI, abs는 class level 에 있는 것이기 때문이다.
+   */
 }
