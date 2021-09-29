@@ -1,6 +1,7 @@
 {
     /**
      * Intersectin Types : &
+     * -> 모든 것을 합한. union은 or 이라면 intersection은  &
      */
 
     type Student = {
