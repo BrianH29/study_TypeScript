@@ -72,6 +72,7 @@
     //   this.firstName = firstName;
     //   this.lastName = lastName; 
     // }
+    
     private internalAge = 4; 
 
     get fullName():string{
