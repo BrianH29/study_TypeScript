@@ -55,7 +55,6 @@
         milk: false,
       }
     }
-
   }
 
   //const maker = new CoffeeMaker(32); 
@@ -64,5 +63,37 @@
   maker.makeCoffee(2);
   console.log(maker); 
 
+  //getter, setter
+  class User {
+    // private firstName: string;
+    // private lastName: string;
+
+    // constructor(firstName: string, lastName:string){
+    //   this.firstName = firstName;
+    //   this.lastName = lastName; 
+    // }
+    private internalAge = 4; 
+
+    get fullName():string{
+      return `${this.firstName} ${this.lastName}`
+    }
+    get age():number{
+      return this.internalAge; 
+    }
+    
+    set age(num: number){
+      if(num < 0){
+        throw new Error('')
+      }
+      this.internalAge = num; 
+    }
+    // 위 필드, 생성자 코드 축약
+    constructor(private firstName:string, private lastName:string){
+
+    }
+  }
+
+  const user = new User('Steve','Jobs'); 
+  user.age = 6;
 
 }
