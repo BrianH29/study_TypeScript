@@ -1,4 +1,8 @@
 {
+    /**
+     * 1-5-union 코드 개선. better code 
+     */
+
     //function : login -> success or fail
     type SucessState = {
         result:'success'; 
