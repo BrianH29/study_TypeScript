@@ -23,7 +23,7 @@ import { isContext } from "vm";
     private static BEANS_PER_GRAM:number = 10; 
     private coffeeBeans:number = 0;
 
-    private constructor(coffeeBeans:number){
+    protected constructor(coffeeBeans:number){
       this.coffeeBeans = coffeeBeans; 
     }
 
@@ -72,7 +72,31 @@ import { isContext } from "vm";
     }
   }
 
+
+  class CoffeeMaker extends MakeCoffee {
+    constructor(beans:number){
+      super(beans); 
+    }
+
+    steamMilk():void {
+      console.log('steaming milk .... '); 
+    }
+
+    extractCoffee(shots:number):CoffeeCup{
+      super.extractCoffee(shots);
+      this.steamMilk(); 
+      return {
+        shots,
+        milk: true,
+        syrup: false,
+        type: 'hot',
+      }
+    }
+  }
+
   const maker:MakeCoffee = MakeCoffee.prepareCoffee(40);
-  console.log(maker); 
+  const coffee = new CoffeeMaker(40); 
+  const extract = coffee.extractCoffee(2); 
+  console.log(extract); 
   maker.extractCoffee(2);
 }
