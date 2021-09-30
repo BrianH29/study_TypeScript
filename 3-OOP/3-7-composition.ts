@@ -133,15 +133,4 @@
       return this.milk.makeMilk(sugarAdded); 
     }
   }
-
-  const machines:CoffeeMaker[] = [
-    new CoffeeMachine(16),
-    new CaffeLatteMachine(16,'sss'),
-    new SweetCoffeeMaker(16),
-  ];
-
-  machines.forEach(machine => {
-    console.log('---------------------------');
-    machine.makeCoffee(1); 
-  });
 }
