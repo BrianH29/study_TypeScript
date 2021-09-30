@@ -168,8 +168,8 @@
   const sweetMachine = new CoffeeMachine(12, noMilk, candySugar);
   const sugarMachine = new CoffeeMachine(12, noMilk, sugar);
 
-  const latteMachine = new CoffeeMachine(12,'ss',CheapMilkMaker);
-  const coldMachine = new CoffeeMachine(12,'ss',coldMilkMaker);
+  const latteMachine = new CoffeeMachine(12,CheapMilkMaker,noSugar);
+  const coldMachine = new CoffeeMachine(12,coldMilkMaker,noSugar);
   const sweetLatteMachine = new CoffeeMachine(12, CheapMilkMaker,candySugar); 
 
 }
