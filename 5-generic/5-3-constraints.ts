@@ -23,8 +23,10 @@ function payBAD(employee: Employee): Employee {
 }
 
 function pay<T extends Employee>(employee: T): T {
+  // function pay<T>(employee: T):T {
   //T extends Employee 하기 전에 T 으로만 타입을 설정하면 "T"가 아뭇것도 지정이 안되어져 있기 때문에 (어떤 타입인지 모르기 때문에) 
-  //employee." " dot 연산자로 아뭇것도 찾을 수 없다. T을 어떤것에서 파생됬는지 조금더 명확하게 extends를 해주면 된다. 
+  //employee." " dot 연산자로 아뭇것도 찾을 수 없다. T을 어떤것에서 파생됬는지 조금더 명확하게 extends를 해주면 된다.
+  //GENERIC 은 extends Employee 를 확장한 애들만 되~~
   employee.pay(); 
   return employee; 
 }

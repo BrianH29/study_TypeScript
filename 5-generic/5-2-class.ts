@@ -20,6 +20,8 @@
   either.left();
   either.right(); 
 
-  const best = new SimpleEither(4, 'hello'); 
+  const best : Either<number, string> = new SimpleEither(4, 'hello');
+  best.left();
+
   const best2 = new SimpleEither({name:'Brian'}, 'hello'); 
 }

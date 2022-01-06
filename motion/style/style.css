@@ -32,7 +32,7 @@ label {
 }
 
 body {
-  background: url('../assets/background.png') center/cover no-repeat;
+  background: url('../assets/motion_bg.png') center/cover no-repeat;
   font-family: Roboto, Oxygen, sans-serif;
   display: flex;
   justify-content: center;
@@ -86,8 +86,8 @@ body {
   overflow-y: auto;
   background-color: var(--document-bg-color);
   /* Firefox */
-  scrollbar-width: 6px;
-  scrollbar-color: var(--bg-accent-color);
+  /*scrollbar-width: 6px;*/
+  /*scrollbar-color: var(--bg-accent-color);*/
   scrollbar-face-color: var(--accent-color);
 }
 

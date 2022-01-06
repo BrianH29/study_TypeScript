@@ -16,7 +16,8 @@ class Counter {
 const counter = new Counter();
 counter.increase(); 
 
-const caller = counter.increase; 
+const caller = counter.increase;
+//this 를 유지하기 위함.
 // const caller = counter.increase.bind(counter); 
 caller(); 
 
