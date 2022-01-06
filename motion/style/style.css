@@ -86,8 +86,8 @@ body {
   overflow-y: auto;
   background-color: var(--document-bg-color);
   /* Firefox */
-  /*scrollbar-width: 6px;*/
-  /*scrollbar-color: var(--bg-accent-color);*/
+  scrollbar-width: 6px;
+  scrollbar-color: var(--bg-accent-color);
   scrollbar-face-color: var(--accent-color);
 }
 
@@ -106,4 +106,5 @@ body {
   background: var(--bg-main-color);
   border-top: 1px solid var(--border-color);
   text-align: center;
+  position: fixed;
 }

@@ -8,14 +8,14 @@ class App {
         this.page = new PageComponent();
         this.page.attachTo(appRoot);
         const image = new ImageComponent('Image Title', 'https://picsum.photos/600/300');
-        image.attachTo(appRoot, "beforeend");
+        this.page.addChild(image);
         const note = new NoteComponent('Note Title', 'Note BODY');
-        note.attachTo(appRoot, "beforeend");
+        this.page.addChild(note);
         const todo = new TodoComponent('ToDo Title', 'Todo Item');
-        todo.attachTo(appRoot, 'beforeend');
+        this.page.addChild(todo);
         const url = 'https://www.youtube.com/watch?v=TTLHd3IyErM';
         const video = new VideoComponent(url, 'Video TITLE');
-        video.attachTo(appRoot, 'beforeend');
+        this.page.addChild(video);
     }
 }
 const el = document.querySelector('.document');
